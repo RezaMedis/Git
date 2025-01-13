@@ -28,16 +28,15 @@ Add the key to the SSH agent:
 Copy the SSH public key:
 	# clip < ~/.ssh/id_ed25519.pub
 
-This copies your key to the clipboard.
+*This copies your key to the clipboard.
 
 Add the SSH Key to GitHub:
-Go to Settings > SSH and GPG keys > New SSH key.
-Paste the key and save.
+-Go to Settings > SSH and GPG keys > New SSH key.
+-Paste the key and save.
 
 ---------------------------------------------------------------------------------------
 Test SSH Configuration
 If you're using SSH (git@github.com:), test the SSH connection:
-
 	# ssh -T git@github.com
 
 If it's successful, you’ll see a message similar to:
@@ -51,30 +50,23 @@ Use the repository URL from GitHub For SSH:
 ---------------------------------------------------------------------------------------
 to create a new repository on the git bash:
 
-user@PC ~ (master)
+user@PC ~ (master):
 	$ echo "# RepoName" >> README.md
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git init
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git add README.md
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git commit -m "first commit"
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git branch -M main
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git remote add origin git@github.com:GitAccountName/RepoName.git
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git push -u origin main
 
-
 ---------------------------------------------------------------------------------------
-Clone a GitHub Repository
+Clone a GitHub Repository:
 
 	$ mkdir Config.git
 	$ cd Config.git
@@ -83,18 +75,15 @@ Clone a GitHub Repository
 ---------------------------------------------------------------------------------------
 to push an existing repository from the git bash:
 
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git remote add origin git@github.com:GitAccountName/RepoName.git
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git branch -M main
-
-user@PC ~ (master)
+user@PC ~ (master):
 	$ git push -u origin main
 
 ---------------------------------------------------------------------------------------
 to push an existing repository In VS Code terminal:
-
 	# git clone git@github.com:GitAccountName/RepoName.git
 	# cd RepoName
 
@@ -102,6 +91,7 @@ to push an existing repository In VS Code terminal:
 Stage Your Files
 Stage all files for commit:
 	# git add .
+
 ---------------------------------------------------------------------------------------
 
 Commit Your Changes
@@ -117,10 +107,10 @@ If the default branch is named master instead of main, use:
 	# git push -u origin master
 
 Using VS Code Git Integration:
-Open the repository folder in VS Code.
-Click the Source Control icon in the Activity Bar.
-Use the interface to stage, commit, and push changes.
-You're now set up to manage your code on GitHub using Git and Visual Studio Code!
+-Open the repository folder in VS Code.
+-Click the Source Control icon in the Activity Bar.
+-Use the interface to stage, commit, and push changes.
+-You're now set up to manage your code on GitHub using Git and Visual Studio Code!
 
 ---------------------------------------------------------------------------------------
 |                              Additional Commands                                    |
@@ -150,8 +140,7 @@ Check Branch Name
 Verify the current branch name:
 	# git branch
 
-If the branch isn't main, rename it or adjust the push command:
-
+If the branch isn't main, rename it or adjust the push command
 To rename the branch to main:
 	# git branch -M main
 
