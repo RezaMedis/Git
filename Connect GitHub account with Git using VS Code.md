@@ -17,14 +17,18 @@ Authenticate with GitHub Using SSH (Recommended)
 
 Generate an SSH Key:
 	# ssh-keygen -t ed25519 -C "your-email@example.com"
+
 Press Enter to accept the default file location and optionally set a passphrase.
 
 Start the SSH Agent:
 	# eval "$(ssh-agent -s)"
+
 Add the key to the SSH agent:
 	# ssh-add ~/.ssh/id_ed25519
+
 Copy the SSH public key:
 	# clip < ~/.ssh/id_ed25519.pub
+
 This copies your key to the clipboard.
 
 Add the SSH Key to GitHub:
@@ -42,9 +46,7 @@ If it's successful, you’ll see a message similar to:
 
 ---------------------------------------------------------------------------------------
 Add GitHub Repository as Remote
-Use the repository URL from GitHub:
-
-For SSH:
+Use the repository URL from GitHub For SSH:
 	# git remote add origin git@github.com:YourUsername/YourRepo.git
 
 ---------------------------------------------------------------------------------------
@@ -52,18 +54,25 @@ to create a new repository on the git bash:
 
 user@PC ~ (master)
 	$ echo "# RepoName" >> README.md
+
 user@PC ~ (master)
 	$ git init
+
 user@PC ~ (master)
 	$ git add README.md
+
 user@PC ~ (master)
 	$ git commit -m "first commit"
+
 user@PC ~ (master)
 	$ git branch -M main
+
 user@PC ~ (master)
 	$ git remote add origin git@github.com:GitAccountName/RepoName.git
+
 user@PC ~ (master)
 	$ git push -u origin main
+
 
 ---------------------------------------------------------------------------------------
 Clone a GitHub Repository
@@ -77,8 +86,10 @@ to push an existing repository from the git bash:
 
 user@PC ~ (master)
 	$ git remote add origin git@github.com:GitAccountName/RepoName.git
+
 user@PC ~ (master)
 	$ git branch -M main
+
 user@PC ~ (master)
 	$ git push -u origin main
 
@@ -123,6 +134,7 @@ Pull Latest Changes:
 
 To push your code, run:
 	# git push -u origin main
+
 *origin: The remote name for your GitHub repository.
 *main: The branch name (adjust to master if your default branch is named that).
 
@@ -130,6 +142,7 @@ To push your code, run:
 Check and Confirm Remote
 Ensure you have the correct remote repository set:
 	# git remote -v
+
 If it doesn't show your GitHub repository, add it:
 	# git remote add origin git@github.com:YourUsername/Config.git
 
@@ -137,6 +150,7 @@ If it doesn't show your GitHub repository, add it:
 Check Branch Name
 Verify the current branch name:
 	# git branch
+
 If the branch isn't main, rename it or adjust the push command:
 
 To rename the branch to main:
@@ -146,6 +160,7 @@ To rename the branch to main:
 Final Push
 Now push the code:
 	# git push -u origin main
+    
 After doing this once, future pushes can simply be:
 	# git push
 
