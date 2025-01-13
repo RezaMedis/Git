@@ -138,7 +138,7 @@ If it doesn't show your GitHub repository, add it:
 ---------------------------------------------------------------------------------------
 Check Branch Name
 Verify the current branch name:
-	# git branch
+    # git branch
 
 If the branch isn't main, rename it or adjust the push command
 To rename the branch to main:
