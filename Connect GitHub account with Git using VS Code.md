@@ -8,7 +8,6 @@ Configure Git
 Open a terminal or Git Bash and run the following commands to set up your Git username and email (these will be associated with your commits):
 	# git config --global user.name "Your GitHub Username"
 	# git config --global user.email "your-email@example.com"
-
 Set VS Code as your default editor for Git:
 	# git config --global core.editor "code --wait"
 
@@ -160,7 +159,7 @@ To rename the branch to main:
 Final Push
 Now push the code:
 	# git push -u origin main
-    
+
 After doing this once, future pushes can simply be:
 	# git push
 
